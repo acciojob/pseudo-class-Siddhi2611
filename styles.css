@@ -4,15 +4,14 @@
 
 #container::before,
 #container::after {
-  color: #f00;
-  font-size: 20px;
-  /* Inline by default – do not use 'display: block' */
+  color: #f00;             /* red color */
+  font-size: 20px;         /* as required */
 }
 
 #container::before {
-  content: "Before Element ";
+  content: "Before Element"; /* 🚫 NO extra space */
 }
 
 #container::after {
-  content: " After Element";
+  content: "After Element";  /* 🚫 NO leading space */
 }
